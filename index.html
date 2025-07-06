@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Made By Ayan</title>
+</head>
+
+<body>
+  <script type="module" src="./js/main.js"></script>
+  
+  <div id="particles"></div>
+  
+  <div id="main-title">
+    <h1>SOLAR SYSTEM</h1>
+    <p>Interactive 3D Journey Through Our Solar System</p>
+  </div>
+  <div id="speed-controls">
+    <div class="panel-header">
+      <div class="panel-icon"><i class="fa-solid fa-bolt" style="color: #ffa200;"></i></div>
+      <h3>Orbital Velocities</h3>
+    </div>
+    <div class="controls-grid"></div>
+  </div>
+  <div id="global-controls">
+    <button id="pause-btn" class="control-btn primary">
+      <span class="btn-icon"><i class="fa-solid fa-pause" style="color: #ffffff;"></i></span>
+      <span class="btn-text">Pause</span>
+    </button>
+    <button id="reset-btn" class="control-btn secondary">
+      <span class="btn-icon"><i class="fa-solid fa-repeat" style="color: #ffffff;"></i></span>
+      <span class="btn-text">Reset</span>
+    </button>
+  </div>
+  <div id="info-panel" hidden>
+    <div class="info-header">
+      <div class="planet-icon"></div>
+      <h3 id="info-name"></h3>
+      <button id="info-close">×</button>
+    </div>
+    <div class="info-content">
+      <p id="info-text"></p>
+      <div class="info-stats">
+        <div class="stat-item">
+          <span class="stat-label">Distance from Sun</span>
+          <span class="stat-value" id="info-distance">-</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-label">Orbital Period</span>
+          <span class="stat-value" id="info-period">-</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="loading-screen">
+    <div class="loading-content">
+      <div class="solar-system-loader">
+        <div class="sun"></div>
+        <div class="planet planet1"></div>
+        <div class="planet planet2"></div>
+        <div class="planet planet3"></div>
+      </div>
+      <h2>Loading Solar System...</h2>
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
+      </div>
+    </div>
+  </div>
+  <div id="instructions">
+    <div class="instruction-item">
+      <span class="key"><i class="fa-solid fa-computer-mouse" style="color: #ffffff;"></i></span>
+      <span>Click planets to learn more</span>
+    </div>
+    <div class="instruction-item">
+      <span class="key"><i class="fa-solid fa-computer-mouse" style="color: #ffffff;"></i></span>
+      <span>Drag to rotate view</span>
+    </div>
+    <div class="instruction-item">
+      <span class="key"><i class="fa-solid fa-info" style="color: #74C0FC;"></i></span>
+      <span>Adjust orbital speeds</span>
+    </div>
+  </div>
+  <a href="https://devlegend.vercel.app" target="_blank">
+  <div id="watermark">
+    <div class="watermark-content">
+      <span class="watermark-icon"><i class="fa-solid fa-star" style="color: #FFD43B;"></i></span>
+      <span class="watermark-text">Made by <span class="watermark-name">Ayan Ahmad Khan</span></span>
+    </div>
+  </div>
+</body>
+</html>
