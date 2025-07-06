@@ -423,8 +423,8 @@ function hideLoadingScreen() {
 function createPlanetsWithLoading() {
   return new Promise((resolve) => {
     setTimeout(() => {
-      planet_earth = loadPlanetTexture("./img/Earth_hd.jpg", 4, 100, 100, 'standard');
-      planet_sun = loadPlanetTexture("/img/Sun_hd.jpg", 20, 100, 100, 'basic');
+      planet_earth = loadPlanetTexture("./img/earth_hd.jpg", 4, 100, 100, 'standard');
+      planet_sun = loadPlanetTexture("./img/sun_hd.jpg", 20, 100, 100, 'basic');
       planet_mercury = loadPlanetTexture("./img/mercury_hd.jpg", 2, 100, 100, 'standard');
       planet_venus = loadPlanetTexture("./img/venus_hd.jpg", 3, 100, 100, 'standard');
       planet_mars = loadPlanetTexture("./img/mars_hd.jpg", 3.5, 100, 100, 'standard');
